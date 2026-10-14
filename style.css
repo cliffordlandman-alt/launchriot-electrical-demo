@@ -1,0 +1,26 @@
+*{box-sizing:border-box}body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif;background:#f5f6f8;color:#2b2d7c}a{color:inherit}
+.banner{background:#2b2d7c;color:#ffb3ae;font-size:13px;text-align:center;padding:7px}.banner a{color:#fff;margin-left:8px;font-weight:600}
+header{display:flex;justify-content:space-between;align-items:center;padding:12px 20px;background:#fff;border-bottom:1px solid #e3e5ea;flex-wrap:wrap;gap:8px}
+.brand{text-decoration:none;font-weight:800;font-size:18px}.brand small{display:block;font-weight:500;font-size:11px;color:#667;letter-spacing:.05em;text-transform:uppercase}
+nav a{margin-left:14px;text-decoration:none;font-weight:600}.btn{background:#d6342c;color:#fff;padding:9px 16px;border-radius:9px;text-decoration:none;font-weight:700;border:0;cursor:pointer;display:inline-block}
+.btn.dark{background:#2b2d7c;color:#fff}.btn.sm{padding:5px 10px;font-size:13px}main{min-height:70vh}
+footer{text-align:center;font-size:13px;color:#667;padding:24px}
+.hero{max-width:1000px;margin:auto;padding:50px 20px;text-align:center}.hero h1{font-size:clamp(32px,6vw,56px);margin:.2em 0}.eyebrow{color:#d6342c;font-weight:800;letter-spacing:.12em;font-size:12px}
+.grid{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}.card{background:#fff;border:1px solid #e3e5ea;border-radius:14px;padding:18px}
+.wrap{max-width:1100px;margin:auto;padding:24px 20px}.stat b{font-size:30px;display:block}
+.plans{display:grid;gap:18px;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));align-items:stretch}
+.plan{background:#fff;border:2px solid #e3e5ea;border-radius:18px;padding:24px;position:relative;display:flex;flex-direction:column}
+.plan.pop{border-color:#d6342c;box-shadow:0 10px 30px rgba(214,52,44,.3);transform:scale(1.03)}
+.badge{position:absolute;top:-13px;left:20px;background:#e5252a;color:#fff;font-weight:800;font-size:12px;padding:5px 11px;border-radius:20px;letter-spacing:.05em}
+.pop .badge2{position:absolute;top:-13px;right:20px;background:#2b2d7c;color:#d6342c;font-weight:800;font-size:12px;padding:5px 11px;border-radius:20px}
+.was{font-size:28px;font-weight:800;color:#8a8f99;text-decoration:line-through;text-decoration-color:#e5252a;text-decoration-thickness:4px}
+.now{font-size:48px;font-weight:900;line-height:1}.now span{font-size:16px;font-weight:600}.for3{display:inline-block;background:#fff3b0;color:#7a5c00;font-weight:800;padding:3px 10px;border-radius:8px;margin:6px 0}
+.plan ul{padding-left:18px;line-height:1.7;flex:1}.muted{color:#667;font-size:14px}
+.app{display:flex;min-height:75vh}.side{width:220px;background:#2b2d7c;color:#cfd3da;padding:14px 10px;flex-shrink:0}.side a{display:block;padding:9px 12px;border-radius:8px;text-decoration:none;font-size:14px}.side a.on{background:#d6342c;color:#fff;font-weight:700}
+.content{flex:1;padding:20px;min-width:0}.toolbar{display:flex;gap:10px;flex-wrap:wrap;align-items:center;margin-bottom:14px}select{padding:7px;border-radius:8px}
+table{width:100%;border-collapse:collapse;background:#fff;border-radius:12px;overflow:hidden;font-size:14px}th,td{padding:9px 10px;border-bottom:1px solid #eef0f3;text-align:left}th{background:#fafbfc;font-size:12px;text-transform:uppercase;color:#667}
+.tw{overflow-x:auto}.pill{padding:3px 8px;border-radius:12px;font-size:12px;font-weight:700;background:#eef0f3}.pill.done,.pill.paid,.pill.accepted{background:#d8f5e1;color:#13703a}.pill.overdue,.pill.declined{background:#fde0e0;color:#a11}.pill.progress,.pill.sent{background:#fff3b0;color:#7a5c00}
+.chat{background:#fff;border-radius:14px;border:1px solid #e3e5ea;padding:14px;margin-bottom:14px}.msg{max-width:80%;padding:9px 12px;border-radius:12px;margin:6px 0;font-size:14px}.msg.in{background:#eef0f3}.msg.bot{background:#fff3b0;margin-left:auto}.msg.sys{background:#e7f0ff;font-size:12px;margin:auto;text-align:center}
+#toast{position:fixed;bottom:20px;left:50%;transform:translateX(-50%);background:#2b2d7c;color:#fff;padding:10px 18px;border-radius:10px;display:none;z-index:9}
+@media(max-width:760px){.app{flex-direction:column}.side{width:auto;display:flex;overflow-x:auto;white-space:nowrap;padding:8px}.side a{display:inline-block}.plan.pop{transform:none}}
+.brand{display:flex;align-items:center;gap:10px}.logo{height:46px;width:auto}.herologo{max-width:240px;width:60%;margin-bottom:10px}.pop .badge2{color:#fff}
