@@ -55,3 +55,14 @@ body:not(.client) .banner{color:#101713}body:not(.client) .banner a{color:#10171
 body:not(.client) .badge{background:#83e7bb;color:#101713}body:not(.client) .was{text-decoration-color:#ff5a4a}
 .lr-logo{display:inline-flex;align-items:center;gap:10px;color:#f0efea}.lr-ico{display:flex;height:32px;width:32px;align-items:center;justify-content:center;border-radius:8px;background:#83e7bb;color:#101713}
 .lr-word{font-family:"Space Grotesk",sans-serif;font-size:18px;font-weight:700;letter-spacing:-.06em}.lr-word span{color:#83e7bb}.lr-sub{display:block;font-size:11px;color:#a3a7ae;font-weight:500;letter-spacing:.05em;text-transform:uppercase}
+
+/* full-width hero glow */
+.hero{max-width:none;width:100%;isolation:isolate;padding-left:20px;padding-right:20px}
+.hero>*,.hero h1{max-width:1000px;margin-left:auto;margin-right:auto}
+.hero:before{inset:-10% 0 0 0;width:auto;height:auto;border-radius:0;filter:none;opacity:1;left:0;top:-10%;
+background:radial-gradient(55% 85% at 22% 15%,rgba(131,231,187,.30),transparent 70%),radial-gradient(50% 80% at 80% 95%,rgba(47,111,87,.55),transparent 72%),radial-gradient(90% 60% at 50% 0%,rgba(131,231,187,.10),transparent 80%);
+animation:glw 10s ease-in-out infinite alternate}
+.hero:after{width:min(60vw,820px);height:min(60vw,820px);left:50%;right:auto;bottom:auto;top:-60%;margin-left:min(-30vw,-410px);opacity:.18;filter:blur(120px)}
+@keyframes glw{to{transform:translateX(3%) scale(1.04);opacity:.85}}
+@media (prefers-reduced-motion:reduce){.hero:before,.hero:after{animation:none}}
+.sect{text-align:center;margin:18px 0 14px}.boticon{font-size:28px}.bots h3{margin:6px 0}
